@@ -1,0 +1,17 @@
+@tailwind utilities;
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#FBFBFA;-webkit-font-smoothing:antialiased;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes sheetUp{from{opacity:0;transform:translateY(40px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.25)}100%{transform:scale(1)}}
+@keyframes shimmer{0%{background-position:-300px 0}100%{background-position:300px 0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@keyframes auroraMove{0%{transform:translate(-10%,-20%) scale(1)}50%{transform:translate(10%,10%) scale(1.15)}100%{transform:translate(-10%,-20%) scale(1)}}
+@keyframes rowIn{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.noscroll::-webkit-scrollbar{display:none}.noscroll{-ms-overflow-style:none;scrollbar-width:none}
+.fu{animation:fadeUp .5s cubic-bezier(.16,1,.3,1) both}
+.press{transition:transform .12s ease}.press:active{transform:scale(.96)}
+.pop{animation:pop .4s ease}
+.skel{background:linear-gradient(90deg,#F0F0F1 25%,#F7F7F8 37%,#F0F0F1 63%);background-size:600px 100%;animation:shimmer 1.3s infinite linear}
+.row-cascade{animation:rowIn .35s cubic-bezier(.16,1,.3,1) both}
+@media (prefers-reduced-motion:reduce){.fu,.pop,.skel,.row-cascade,*{animation:none!important}}

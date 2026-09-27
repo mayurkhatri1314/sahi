@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "PowerShell($dst = \"C:\\\\Users\\\\Fcpl\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Fcpl-Downloads-sahi-sahi\\\\3b8ced03-9f01-4ff7-958e-aeee585172d6\\\\scratchpad\\\\backup-pre-phase0\"; New-Item -ItemType Directory -Force $dst | Out-Null; foreach \\($p in @\\(\"lib\",\"app\",\"components\",\"scripts\",\"db\",\"public\"\\)\\) { Copy-Item -Recurse -Force \"C:\\\\Users\\\\Fcpl\\\\Downloads\\\\sahi\\\\sahi\\\\$p\" $dst }; Copy-Item -Force \"C:\\\\Users\\\\Fcpl\\\\Downloads\\\\sahi\\\\sahi\\\\package.json\",\"C:\\\\Users\\\\Fcpl\\\\Downloads\\\\sahi\\\\sahi\\\\.env.example\",\"C:\\\\Users\\\\Fcpl\\\\Downloads\\\\sahi\\\\sahi\\\\README.md\",\"C:\\\\Users\\\\Fcpl\\\\Downloads\\\\sahi\\\\sahi\\\\vercel.json\" $dst; \\(Get-ChildItem -Recurse $dst -File\\).Count)",
+      "PowerShell(npm test 2>&1)",
+      "PowerShell(node .\\\\node_modules\\\\typescript\\\\bin\\\\tsc --noEmit 2>&1)",
+      "PowerShell(npm run build 2>&1)"
+    ]
+  }
+}
